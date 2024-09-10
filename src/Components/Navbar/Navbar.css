@@ -8,7 +8,7 @@
 
 }
 .navbar .logo{
-    width: max(12vw, 20px   );
+    width: max(12vw, 20px);
 
 }
 .navbar ul{
@@ -22,7 +22,7 @@
 .nav-right{
     display: flex;
     align-items: center;
-    gap: (1vw, 12px);
+    gap: (1vw, 120px);
 }
 .navbar select{
     padding: 5px 8px;
@@ -30,6 +30,7 @@
     border: 2px solid white;
     background: transparent;
     color: #ffffff;
+    margin-right: 10px;
 }
 .navbar option{
     background-color: #09005c;
@@ -39,7 +40,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 25px;
+    padding: 10px 15px;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 500;
@@ -49,5 +50,5 @@
     cursor: pointer;
 }
 .navbar button img{
-    width: 30px ;
+    width: 15px ;
 }
