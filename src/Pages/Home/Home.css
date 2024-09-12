@@ -47,23 +47,120 @@
     cursor: pointer;
 }
 .crypto-table{
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     background: linear-gradient(rgba(84,3,255,0.15), rgba(105,2,153,0.15));
     border-radius: 15px;
 }
 .table-layout{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 0.5fr 2.7fr 1fr 1.8fr 2fr 1fr;
     padding: 15px 20px;
     align-items: center;
     border-bottom: 1px solid  #3c3c3c;
 }
-
-
-.table-layout:nth-child(4){
+.name {
+  display: inline;
+}
+/* .market{
+    text-align: right;
+} */
+.table-layout:last-child{
+    border: none;
+}
+.table-layout div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.table-layout img{
+    width: 35px;
+}
+.table-layout .green{
+    color: #00d515;
     text-align: center;
 }
-.market{
-    text-align: right;
+.table-layout .red{
+    color: #ff4646;
+    text-align: center;
+}
+.inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 15px;
+}
+b2m-btn.btn-ghost, a.b2m-btn.btn-ghost {
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    border: 0;
+    color: #044e97;
+    padding: 0 10px;
+}
+.b2m-btn, a.b2m-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    /* max-width: 480px; */
+    min-height: 48px;
+    line-height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 12px 10px;
+    cursor: pointer;
+    /* font-family: "Open sans", Arial, Sans-serif; */
+    font-weight: 700;
+    font-size: 15px;
+    transition: all ease .3s;
+    position: relative;
+}
+.b2m-btn.btn-solid, a.b2m-btn.btn-solid {
+    color: #fff;
+    background-color: #044e97;
+    border-color: #044e97;
+    text-transform: uppercase;
+}
+@media (max-width:768px){
+    .crypto-table{
+        overflow-x: scroll;
+    }
+    .table-layout img{
+        width: 20px;
+
+    }
+    .table-layout{
+        grid-template-columns: 0.2fr 1fr 0.2fr 1fr 1fr 1fr;
+        max-width: 1200px;
+    }
+    .b2m-btn, a.b2m-btn {
+        margin-right: 0;
+    }
+    .table-layout div{
+        gap: 10px;
+    }
+    .table-layout{
+        padding: 15px 0 ;
+    }
+    .table-layout:first-child{
+        gap: 3px;
+    }
+      .name {
+    display: none; /* Only hide the name */
+  }
+
+  .symbol {
+    display: inline; /* Keep showing the symbol */
+  }
+
+  
 }
