@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const CoinContext = createContext();
 
+
 const CoinContextProvider = (props)=>{
 
     const [allCoin, setAllCoin]= useState([]);
@@ -16,7 +17,7 @@ const CoinContextProvider = (props)=>{
           method: 'GET',
           headers: {
             accept: 'application/json',
-            'x-cg-demo-api-key': 'CG-J9b7zHNVjLy88EJKP9CZ4A43',
+            'x-cg-demo-api-key': import.meta.env.COIN_KEY
           },
         }
 
